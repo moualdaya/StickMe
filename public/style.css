@@ -120,13 +120,15 @@ p {
 .mobile-sidebar {
   position: fixed;
   top: 0;
-  right: -300px; /* Caché à droite */
-  width: 70%; /* Ou 300px si tu préfères fixe */
+  right: -300px; /* caché par défaut */
+  width: 70%;
   max-width: 320px;
   height: 100vh;
   background-color: #111;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centrer verticalement */
+  align-items: center;     /* Centrer horizontalement */
   padding: 2rem 1rem;
   transition: right 0.3s ease;
   z-index: 9999;
@@ -137,14 +139,21 @@ p {
 }
 
 .mobile-sidebar a {
-  color: white;
+  color: #c44fe8;
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* trait séparateur */
+}
+
+.mobile-sidebar a:last-child {
+  border-bottom: none; /* Pas de trait après le dernier */
 }
 
 .mobile-sidebar a:hover {
-  color: #ffcc00;
+  color: #c44fe8;
 }
 
 .close-btn {
@@ -152,11 +161,12 @@ p {
   top: 20px;
   right: 20px;
   font-size: 2rem;
-  color: white;
+  color: #c44fe8;
   background: none;
   border: none;
   cursor: pointer;
 }
+
 
 
 
