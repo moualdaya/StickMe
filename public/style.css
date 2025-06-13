@@ -120,7 +120,8 @@ p {
 .mobile-sidebar {
   position: fixed;
   top: 0;
-  right: -300px; /* caché par défaut */
+  right: auto;
+  left: -300px; /* caché par défaut */
   width: 70%;
   max-width: 320px;
   height: 100vh;
@@ -135,7 +136,7 @@ p {
 }
 
 .mobile-sidebar.active {
-  right: 0;
+  left: 0;
 }
 
 .mobile-sidebar a {
