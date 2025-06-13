@@ -117,6 +117,30 @@ p {
     font-size: var(--font-size-4xl);
     font-weight: 700;
 }
+/* Ajoute ceci dans ton style.css */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #111; /* couleur de fond */
+  position: absolute;
+  top: 70px; /* ajuster selon la hauteur de ta navbar */
+  right: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+/* Afficher le menu quand il est actif */
+.mobile-nav.active {
+  display: flex;
+}
+
 
 /* Buttons */
 .btn {

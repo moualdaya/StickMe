@@ -156,6 +156,15 @@ function updateCartCount() {
         cartCountElement.style.display = totalItems > 0 ? 'flex' : 'none';
     }
 }
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+
+  menuBtn.addEventListener('click', function () {
+    mobileNav.classList.toggle('active');
+  });
+});
+
 
 function getCartTotal() {
     const cart = getCart();
