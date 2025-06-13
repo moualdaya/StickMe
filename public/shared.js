@@ -159,11 +159,17 @@ function updateCartCount() {
 document.addEventListener('DOMContentLoaded', function () {
   const menuBtn = document.getElementById('mobileMenuBtn');
   const mobileNav = document.getElementById('mobileNav');
+  const closeBtn = document.getElementById('closeMobileNav');
 
   menuBtn.addEventListener('click', function () {
-    mobileNav.classList.toggle('active');
+    mobileNav.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', function () {
+    mobileNav.classList.remove('active');
   });
 });
+
 
 
 function getCartTotal() {
